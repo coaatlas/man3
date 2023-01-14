@@ -11,7 +11,7 @@ const { validarCampos } = require('../middleware/validar-campos');
 const { validarJWT } = require('../middleware/validar-jwt');
 
 
-    router.post   ('/new', 
+    router.post   ('/new',  
     [  
         check('name', 'Name is required').not().isEmpty(),  
         check('email', 'Email is required').isEmail(),
