@@ -1,3 +1,0 @@
-PORT=4000
-DB_CNN=mongodb+srv://vercel-admin-user:Leof_22016@calendarcoadb.d9tiyti.mongodb.net/Calendardbcoa
-SECRET_JWT_SEED=s_eleof_c223@ret_deslde_el_backend_2021_20nn22
