@@ -18,7 +18,7 @@ const port = process.env.PORT ;
 app.use(cors());
 
 // Directorio Público
-app.use( express.static(path.join(__dirname, 'public')) );
+app.use( express.static(path.join(__dirname, '/public/index.html')) );
 
 app.use(express.json());
 
