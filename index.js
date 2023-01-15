@@ -1,5 +1,6 @@
 const express = require('express');
 require('dotenv').config();
+const path = require('path');
 const cors = require('cors');
 const { dbConnection } = require('./database/config');
 
@@ -16,8 +17,8 @@ const port = process.env.PORT ;
 
 app.use(cors());
 
-//Directorio publico
-app.use(express.static('public'));
+// Directorio Público
+app.use( express.static(path.join(__dirname, 'public')) );
 
 app.use(express.json());
 
