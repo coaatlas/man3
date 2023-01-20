@@ -119,7 +119,9 @@ const { generarJWT } = require('../helpers/jwt');
 
         res.json({
         ok: true,
-        message: 'Token renewed',       
+        message: 'Token renewed',  
+        uid,
+        name,     
         token         
         })   
          }
