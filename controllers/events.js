@@ -114,7 +114,7 @@ const borrarEvento = async ( req, res =response ) => {
         if ( evento.user.toString() !== req.uid ) {
             return res.status(401).json({
                 ok : false,
-                msg : 'No tiene privilegio de eliminar este evento'
+                msg : 'No tiene privilegio de eliminar este evento, fue registrado por otro usuario'
             });
         }
         await Evento.findByIdAndDelete( eventoId );
