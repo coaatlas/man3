@@ -26,6 +26,9 @@ app.use(express.json());
 
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/events', require('./routes/events'));
+app.use('/api/productos', require('./routes/productos'));
+app.use('/api/clientes', require('./routes/clientes'));
+app.use('/api/presupuestos', require('./routes/presupuestos'));
 
 app.get('/*', (req, res) => {
     res.sendFile (path.join(__dirname, './public/index.html'));
