@@ -9,7 +9,7 @@ const getPresupuesto = async ( req, res =response ) => {
     
         const presupuestos = await Presupuesto.find()
                                             .populate('user', 'name')
-                                            .populate('cliente', 'id', 'nombre');
+                                            .populate('cliente', 'nombre');
 
     
         res.json({
