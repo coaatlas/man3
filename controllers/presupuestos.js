@@ -8,7 +8,9 @@ const Presupuesto =  require('../models/Presupuestos');
 const getPresupuesto = async ( req, res =response ) => {
     
         const presupuestos = await Presupuesto.find()
-                                            .populate('user', 'name');
+                                            .populate('user', 'name')
+                                            .populate('cliente', 'id', 'nombre');
+
     
         res.json({
             ok : true,
