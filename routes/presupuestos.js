@@ -23,7 +23,8 @@ router.post('/',
 [
     check ('pedido', 'El pedido es obligatorio' ).not().isEmpty(),
     check ('total', 'El total es obligatorio' ).not().isEmpty(),
-    check ('cliente', 'El cliente es obligatorio' ).not().isEmpty(),
+    check ('cantidad', 'La cantidad es obligatoria' ).not().isEmpty(),
+    check ('empresa', 'El cliente es obligatorio' ).not().isEmpty(),
     validarCampos
 ],
 crearPresupuesto);
@@ -34,7 +35,8 @@ router.put('/:id',
 [
     check ('pedido', 'El pedido es obligatorio' ).not().isEmpty(),
     check ('total', 'El total es obligatorio' ).not().isEmpty(),
-    check ('cliente', 'El cliente es obligatorio' ).not().isEmpty(),
+    check ('cantidad', 'La cantidad es obligatoria' ).not().isEmpty(),
+    check ('empresa', 'El cliente es obligatorio' ).not().isEmpty(),
     validarCampos
 ],
  actualizarPresupuesto);

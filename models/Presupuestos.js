@@ -11,9 +11,17 @@ const PresupuestoSchema = Schema({
         type: Number,
         required: true
     },
-    cliente : {
-        type: Schema.Types.ObjectId,
-        ref: 'Cliente',
+    cantidad: {
+        type: Number,
+        required: true
+    },
+    // cliente : {
+    //     type: Schema.Types.ObjectId,
+    //     ref: 'Cliente',
+    //     required: true
+    // },
+    empresa:{
+        type: Array,
         required: true
     },
     user: {
